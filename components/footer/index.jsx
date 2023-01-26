@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
 
-const Footer = () => {
+import styles from "./styles.module.css";
+
+function Footer() {
   return (
-    <div>Footer</div>
-  )
+    <footer className={styles.footer}>
+      Made with ❤️ by&nbsp;
+      <Link href="https://twitter.com/mucahittasan0" target="_blank">
+        Mucahit Tasan
+      </Link>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;
